@@ -27,6 +27,7 @@ Each list is saved as a `.txt` file:
 ## 🚀 How to Run
 
 ### 1. Clone the Repo or Copy Code
+
 ```bash
 git clone https://github.com/yourusername/insta-follower-analyzer
 cd insta-follower-analyzer
@@ -34,106 +35,90 @@ cd insta-follower-analyzer
 
 ### 2. Install Python Requirements
 
+```bash
 pip install instaloader
+```
 
-3. Run the Script
+### 3. Run the Script
 
+```bash
 python insta_gui.py
+```
 
+---
 
-
-🧾 How to Get Your Instagram Session ID
+## 🧾 How to Get Your Instagram Session ID
 
 > Instagram uses a sessionid cookie to keep you logged in. We'll use this safely (no password needed) to analyze your followers.
 
+### 🔍 Steps to Get sessionid:
 
+#### For Chrome:
 
-🔍 Steps to Get sessionid:
+1. Open [instagram.com](https://instagram.com) and log in to your account.
+2. Right-click anywhere on the page and select **Inspect** or press `Ctrl+Shift+I`.
+3. Go to the **Application** tab.
+4. In the left menu, under **Storage**, click on **Cookies** → `https://www.instagram.com`
+5. Find the cookie named `sessionid` and copy its value.
 
-✅ For Chrome:
+#### For Firefox:
 
-1. Open instagram.com and log in to your account.
+1. Log in to Instagram and right-click → **Inspect Element**
+2. Go to **Storage > Cookies**
+3. Copy the value of the `sessionid`
 
+> 🛑 **Never share this session ID with anyone — it can be used to access your Instagram account.**
 
-2. Right-click anywhere on the page and select "Inspect" or press Ctrl+Shift+I.
+---
 
+## 🖼 Interface Preview
 
-3. Go to the Application tab.
-
-
-4. In the left menu, under Storage, click on Cookies → https://www.instagram.com
-
-
-5. Find the cookie named sessionid and copy its value.
-
-
-
-✅ For Firefox:
-
-1. Login to Instagram and right-click → Inspect Element
-
-
-2. Go to Storage > Cookies
-
-
-3. Copy the value of the sessionid
-
-
-
-🛑 Never share this session ID with anyone — it can be used to access your Instagram account.
+<img width="627" height="727" alt="image" src="https://github.com/user-attachments/assets/f9421166-39cf-4c45-9bb8-b28d9a008fc2" />
 
 
 ---
 
-🖼 Interface Preview
+## 📁 Output Example
 
-<img src="preview.png" width="600">
----
+**traitors.txt**
 
-📁 Output Example
-
-traitors.txt
-
-
+```
 user1
 user2
 user3
+```
 
-fans.txt
+**fans.txt**
 
-
+```
 followerA
 followerB
+```
 
-mutuals.txt
+**mutuals.txt**
 
-
+```
 friend1
 friend2
 friend3
-
-
----
-
-📌 Notes
-
-This app does not use Instagram's official API (which is restricted). It uses cookies for safer access.
-
-Avoid running it repeatedly in a short time — Instagram may temporarily restrict access.
-
-No password is stored or transmitted.
-
-
+```
 
 ---
 
-📄 License
+## 📌 Notes
+
+- This app does not use Instagram's official API (which is restricted). It uses cookies for safer access.
+- Avoid running it repeatedly in a short time — Instagram may temporarily restrict access.
+- No password is stored or transmitted.
+
+---
+
+## 📄 License
 
 MIT License — Feel free to modify and use!
 
-
 ---
 
-👨‍💻 Author
+## 👨‍💻 Author
 
-Made with ❤️ by [Pralin Khaira](www.instagram.com/tbh.yoursss/)
+Made with ❤️ by Pralin Khaira [Instagram](https://www.instagram.com/tbh.yoursss/)
